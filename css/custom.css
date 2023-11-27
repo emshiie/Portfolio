@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255,172,208);
+  background: radial-gradient(circle, rgba(255,172,208,1) 0%, rgba(174,117,220,1) 99%, rgba(170,209,255,1) 100%);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.lead{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.rounded-circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.rounded-circle {
+  position: relative;
+}
+
+.rounded-circle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: inherit;
+}
+
+
+.rounded-circle {
+  border: 5px solid #ffacd0; 
+}
+
+.display-4{
+  font-size: 1.8rem;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+header {
+  background: no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 60vh;
+}
+
+.singleCol {
+  max-width: 750px;
+}
+
+footer {
+  background-color: #d96bb1;
+  color: wheat;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #dfdfdf;
+}
+
+@media (max-width: 767.98px) {
+  .color-overlay {
+    min-height: 30vh;
+  }
+}
